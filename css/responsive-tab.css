@@ -1,0 +1,104 @@
+
+main {
+  min-width: 320px;
+/*  max-width: 800px;*/
+  padding: 0;
+  margin: 0 auto;
+  background: #fff;
+}
+
+section {
+  display: none;
+  padding: 0;
+  border: 1px solid #ddd;
+}
+
+main input {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  /*margin: 0 0 -1px;*/
+  margin-right:2px;
+  padding: 10px 25px;
+  font-weight: 600;
+  text-align: center;
+  color: #333;
+  /*border: 1px solid #333;*/
+  
+  
+    
+      background: -webkit-linear-gradient(#DADADA, #F0F0F0); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#DADADA, #F0F0F0); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#DADADA, #F0F0F0); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#DADADA, #F0F0F0); /* Standard syntax */
+	
+	
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+label:before {
+  font-family: fontawesome;
+  font-weight: normal;
+  margin-right: 0;
+}
+
+label[for*='1']:before {
+  content: '';
+}
+
+label[for*='2']:before {
+  content: '';
+}
+
+label[for*='3']:before {
+  content: '';
+}
+
+label[for*='4']:before {
+  content: '';
+}
+
+label:hover {
+  color: #000;
+  cursor: pointer;
+  /*border-top: 2px solid #05519E;*/
+  
+      background: -webkit-linear-gradient(#8BB82E, #ACD557); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#8BB82E, #ACD557); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#8BB82E, #ACD557); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#8BB82E, #ACD557); /* Standard syntax */
+}
+
+input:checked + label {
+  color: #FFF;
+  /*border: 1px solid #ddd;
+  border-top: 2px solid #05519E;*/
+  background:#000;
+
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4 {
+  display: block;
+}
+
+@media screen and (max-width: 650px) {
+  label {
+    font-size: 0;
+  }
+
+  label:before {
+    margin: 0;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 400px) {
+  label {
+    padding: 15px;
+  }
+}
